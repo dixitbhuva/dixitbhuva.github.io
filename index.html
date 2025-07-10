@@ -35,11 +35,50 @@
     }
   }
   </script>
+    <link href="src/output.css" rel="stylesheet">
+    <style>
+    body {
+      background: radial-gradient(circle at center, #f0f4f8, #dbeafe);
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+
 </head>
 
-<body>
-    <p style="text-align: center;">Click on below link to take part in early release</p>
-    <a href="http://82.29.166.154/" style="display: block; font-size: 20px; text-align: center;">Server 1: 82.29.166.154</a>
-</body>
+<body class="min-h-screen flex items-center justify-center text-gray-800">
+
+  <div class="bg-white rounded-3xl shadow-2xl p-10 w-[90%] max-w-md text-center fade-in">
+    <!-- Title -->
+    <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+      10x<span class="text-blue-600">Bet</span><span class="text-gray-500 text-lg align-top">.me</span>
+    </h1>
+
+    <!-- Tagline -->
+    <p class="text-lg sm:text-xl text-gray-700 mb-6 font-medium">
+      Bet Big, Win Bigger – <span class="text-black font-semibold">10x Your Game</span>
+    </p>
+
+    <!-- Server IP -->
+    <div class="text-sm text-gray-500 mb-2">Current Server</div>
+    <div class="mr-2 font-mono text-sm bg-gray-200 inline-block px-4 py-2 rounded mb-6">
+      82.29.166.154
+    </div>
+
+    <!-- Button -->
+    <a href="http://82.29.166.154/" target="_blank" rel="noopener noreferrer"
+       class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm sm:text-base px-8 py-3 rounded-full font-semibold shadow-lg transition-all duration-200">
+       Play Now
+    </a>
+  </div>
+
+  </body>
 
 </html>
